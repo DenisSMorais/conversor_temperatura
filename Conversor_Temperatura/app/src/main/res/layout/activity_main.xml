@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0833A1"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_tempC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:backgroundTint="#FBFBFB"
+        android:drawableTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Insira uma temp ºC"
+        android:inputType="textPersonName|numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FBFBFB"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_converter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#FFFDFD"
+        android:text="converter"
+        android:textColor="#0D55E6"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/et_tempC"
+        app:layout_constraintTop_toBottomOf="@+id/et_tempC" />
+
+    <TextView
+        android:id="@+id/tv_tempF"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="-13dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:textColor="#FBFBFB"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/bt_converter"
+        app:layout_constraintTop_toBottomOf="@+id/bt_converter" />
+</androidx.constraintlayout.widget.ConstraintLayout>
